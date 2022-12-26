@@ -7,7 +7,7 @@ const initialState = {
 };
 export const addTour = createAsyncThunk(
   "/create/tour",
-  async (data, thunkAPI) => {
+  async (_, thunkAPI) => {
     try {
       const res = await fetch("");
       const data = await res.json();

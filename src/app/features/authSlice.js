@@ -11,7 +11,6 @@ const initialState = {
 export const authSignUp = createAsyncThunk(
     "auth/signup",
     async ({ mail, password, name, secondName, lastName,firstName }, thunkAPI) => {
-        console.log(mail, password, name, secondName, lastName);
         try {
             const res = await fetch("http://localhost:4000/add/user", {
                 method: "POST",

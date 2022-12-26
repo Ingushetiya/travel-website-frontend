@@ -7,6 +7,8 @@ import applicationSlice from "./features/authSlice";
 import hotelSlice from "./features/hotelSlice";
 
 export const store = configureStore({
+    //store
+    
   reducer: {
     userData: userDataSlice,
     reducer: organizationSlice,

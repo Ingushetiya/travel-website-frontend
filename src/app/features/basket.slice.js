@@ -30,7 +30,6 @@ export const addBasket = createAsyncThunk(
         body: JSON.stringify({ toursId: data }),
         headers: {
           "Content-type": "application/json",
-          // Authorization:нужно передать token
         },
       });
       const tour = await res.json();
@@ -53,7 +52,7 @@ export const deleteTourBasket = createAsyncThunk(
       body: JSON.stringify({ toursId: data }),
       headers: {
         "Content-type": "application/json",
-        //Authorization: token
+
       },
     });
     const tour = await res.json();
